@@ -1,18 +1,16 @@
 #!/usr/bin/env python3
 
-# Maximun algorithm
+# Minimun algorithm
 # By: lgarciaorozco6@gmail.com
 # LICENSE GNU/GPL
 # 9/10/23
 
 
-from random import randint
+from random import random
 
 n = 1e6
-a = -1e5
-b = 1e5
 
-data = [randint(int(a),int(b)) for _ in range(int(n))]
+data = [random() for _ in range(int(n))]
 
 if data:
     m = data[0]

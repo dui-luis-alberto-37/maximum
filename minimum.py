@@ -6,11 +6,18 @@
 # 9/10/23
 
 
-data = [15.4,551.5,5.5,68.4,6.0]
-m = None
+from random import randint
+
+n = 1e6
+a = -1e5
+b = 1e5
+
+data = [randint(int(a),int(b)) for _ in range(int(n))]
+
 if data:
     m = data[0]
     for x in data:
         if x <= m: m = x
+else: m = None
 
 print(m)
